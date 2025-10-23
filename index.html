@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lelameid - Transforming Education Through Innovation</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#11497F',
+                        secondary: '#F58020'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Inter', sans-serif; }
+        .parallax-hero {
+            background-image: url('https://readdy.ai/api/search-image?query=modern%20educational%20environment%20with%20diverse%20students%20learning%20together%20in%20bright%20classroom%20with%20natural%20lighting%20warm%20atmosphere%20professional%20photography%20high%20quality&width=1920&height=1080&seq=hero001&orientation=landscape');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .curved-divider {
+            position: relative;
+            overflow: hidden;
+        }
+        .curved-divider::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: white;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+            transform: translateY(50%);
+        }
+        .counter { transition: all 0.3s ease; }
+        .testimonial-card { transition: transform 0.3s ease; }
+        .testimonial-card:hover { transform: translateY(-4px); }
+        .form-input {
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .form-input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                     <img src="https://i.postimg.cc/R0B83zTr/edimg.png"
+                 alt="LelaMeid Logo">
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#join" class="text-gray-700 hover:text-primary transition-colors">Register</a>
+                    <a href="#curriculum" class="text-gray-700 hover:text-primary transition-colors">Curriculum</a>
+                    <a href="#endorsements" class="text-gray-700 hover:text-primary transition-colors">Endorsements</a>
+                    <a href="#donate" class="text-gray-700 hover:text-primary transition-colors">Donate</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    <a href="#portal" class="text-gray-700 hover:text-primary transition-colors">Parent Portal</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2 text-primary font-semibold">
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <button class="md:hidden w-8 h-8 flex items-center justify-center">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="parallax-hero min-h-screen flex items-center relative">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                        Transforming Education Through Innovation
+                    </h1>
+                    <p class="text-xl text-white mb-8 leading-relaxed">
+                        Empowering students with cutting-edge learning methodologies and personalized educational experiences that prepare them for tomorrow's challenges.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+                            Get Started Today
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 !rounded-button font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50 curved-divider">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Mission & Definition</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        At Lelameid, we believe education should be transformative, inclusive, and forward-thinking. Our mission is to revolutionize learning by combining traditional educational values with innovative teaching methods that inspire creativity, critical thinking, and lifelong learning.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-lightbulb-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+                        <p class="text-gray-600">Cutting-edge methodologies that engage and inspire students</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-group-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Community</h3>
+                        <p class="text-gray-600">Building strong connections between students, families, and educators</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="ri-trophy-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Excellence</h3>
+                        <p class="text-gray-600">Pursuing the highest standards in educational achievement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Join Our Community</h2>
+                    <p class="text-xl text-gray-600">Take the first step towards transformative education</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <form class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your first name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your last name">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your email address">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your street address">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your city">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">State</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your state">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Zip Code</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter zip code">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Enter your phone number">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Comments</label>
+                            <textarea class="form-input w-full px-4 py-3 rounded-lg border-none bg-white h-24 resize-none" placeholder="Tell us more about your educational goals"></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+                                Submit Registration
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="py-20 relative" style="background-image: url('https://readdy.ai/api/search-image?query=hands%20holding%20books%20and%20educational%20materials%20warm%20lighting%20inspiring%20atmosphere%20donation%20concept%20clean%20background%20professional%20photography&width=1920&height=800&seq=donate001&orientation=landscape'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-primary bg-opacity-90"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center text-white mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Support Our Mission</h2>
+                    <p class="text-xl">Your contribution helps us provide quality education to more students</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Enter your full name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Donation Amount</label>
+                            <div class="grid grid-cols-4 gap-3 mb-4">
+                                <button type="button" class="py-3 px-4 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors whitespace-nowrap">$25</button>
+                                <button type="button" class="py-3 px-4 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors whitespace-nowrap">$50</button>
+                                <button type="button" class="py-3 px-4 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors whitespace-nowrap">$100</button>
+                                <button type="button" class="py-3 px-4 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors whitespace-nowrap">Other</button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Card Information</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg mb-3" placeholder="Card number">
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="text" class="form-input w-full px-4 py-3 rounded-lg" placeholder="MM/YY">
+                                <input type="text" class="form-input w-full px-4 py-3 rounded-lg" placeholder="CVC">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Comments</label>
+                            <textarea class="form-input w-full px-4 py-3 rounded-lg h-20 resize-none" placeholder="Optional message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+                            Complete Donation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum" class="py-20 bg-gray-50 relative" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20classroom%20with%20interactive%20learning%20tools%20digital%20boards%20students%20engaged%20in%20collaborative%20learning%20bright%20natural%20lighting%20educational%20technology&width=1920&height=800&seq=curriculum001&orientation=landscape'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-white bg-opacity-95"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Tools & Curriculum</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Our comprehensive curriculum combines proven educational methods with innovative tools to create engaging learning experiences
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                            <i class="ri-book-open-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Interactive Learning</h3>
+                        <p class="text-gray-600">Engaging digital tools that make learning interactive and fun for students of all ages</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                            <i class="ri-graduation-cap-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Personalized Path</h3>
+                        <p class="text-gray-600">Customized learning paths that adapt to each student's unique needs and learning style</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                            <i class="ri-team-line text-xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Expert Support</h3>
+                        <p class="text-gray-600">Dedicated educators and support staff committed to student success and growth</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portal" class="py-16 bg-primary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Parent Portal Access</h2>
+                <p class="text-xl text-blue-100 mb-8">Stay connected with your child's educational journey</p>
+                <button class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Access Parent Dashboard
+                </button>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">What Parents Say</h2>
+                    <p class="text-xl text-gray-600">Real experiences from our community</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="testimonial-card bg-gray-50 rounded-xl p-6">
+                        <div class="flex mb-4">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Lelameid has completely transformed how my daughter approaches learning. The personalized attention and innovative methods have boosted her confidence tremendously."</p>
+                        <div class="font-semibold">Sarah Johnson</div>
+                        <div class="text-sm text-gray-500">Parent of Emma, Grade 5</div>
+                    </div>
+                    <div class="testimonial-card bg-gray-50 rounded-xl p-6">
+                        <div class="flex mb-4">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The teachers at Lelameid truly care about each student's success. My son has developed a genuine love for learning that I never thought possible."</p>
+                        <div class="font-semibold">Michael Chen</div>
+                        <div class="text-sm text-gray-500">Parent of Alex, Grade 8</div>
+                    </div>
+                    <div class="testimonial-card bg-gray-50 rounded-xl p-6">
+                        <div class="flex mb-4">
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                            <i class="ri-star-fill text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Outstanding educational experience! The curriculum is engaging and the support system is incredible. Highly recommend to any parent seeking quality education."</p>
+                        <div class="font-semibold">Lisa Rodriguez</div>
+                        <div class="text-sm text-gray-500">Parent of Sofia, Grade 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="endorsements" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Trusted By Leaders</h2>
+                    <p class="text-xl text-gray-600">Recognized by educational institutions and organizations</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i class="ri-building-line text-2xl text-gray-600"></i>
+                        </div>
+                        <div class="font-semibold text-gray-700">Education Board</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i class="ri-award-line text-2xl text-gray-600"></i>
+                        </div>
+                        <div class="font-semibold text-gray-700">Excellence Award</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i class="ri-government-line text-2xl text-gray-600"></i>
+                        </div>
+                        <div class="font-semibold text-gray-700">State Certified</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i class="ri-shield-check-line text-2xl text-gray-600"></i>
+                        </div>
+                        <div class="font-semibold text-gray-700">Accredited</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-primary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white mb-4">Our Impact</h2>
+                    <p class="text-xl text-blue-100">Making a difference in education every day</p>
+                </div>
+                <div class="grid md:grid-cols-4 gap-8 text-center text-white">
+                    <div>
+                        <div class="counter text-4xl font-bold mb-2" data-target="2500">0</div>
+                        <div class="text-blue-100">Students Enrolled</div>
+                    </div>
+                    <div>
+                        <div class="counter text-4xl font-bold mb-2" data-target="150">0</div>
+                        <div class="text-blue-100">Expert Teachers</div>
+                    </div>
+                    <div>
+                        <div class="counter text-4xl font-bold mb-2" data-target="98">0</div>
+                        <div class="text-blue-100">Success Rate %</div>
+                    </div>
+                    <div>
+                        <div class="counter text-4xl font-bold mb-2" data-target="15">0</div>
+                        <div class="text-blue-100">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+                        <p class="text-xl text-gray-600 mb-8">Ready to start your educational journey? We're here to help.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                    <i class="ri-phone-line text-xl text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Phone</div>
+                                    <div class="text-gray-600">(555) 123-4567</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                    <i class="ri-mail-line text-xl text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Email</div>
+                                    <div class="text-gray-600">info@lelameid.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                    <i class="ri-map-pin-line text-xl text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Address</div>
+                                    <div class="text-gray-600">123 Education Ave, Learning City, LC 12345</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Your full name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="form-input w-full px-4 py-3 rounded-lg border-none bg-white" placeholder="Your email address">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea class="form-input w-full px-4 py-3 rounded-lg border-none bg-white h-32 resize-none" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white pt-16 pb-8 curved-divider text-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <footer class="bg-[#11497F] text-white">
+
+
+<div class="container text-left">
+    <img src="https://i.postimg.cc/R0B83zTr/edimg.png"
+         alt="LelaMeid Logo"
+         class="invert brightness-0 w-32"> <!-- এখানে আর mx-auto নেই -->
+</div>
+
+                    <p class="text-gray-300 mb-6">Transforming education through innovation and dedication to student success.</p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-twitter-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-linkedin-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-gray-300 hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-300 hover:text-white transition-colors">About</a>
+                        <a href="#curriculum" class="block text-gray-300 hover:text-white transition-colors">Curriculum</a>
+                        <a href="#contact" class="block text-gray-300 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <div>(555) 123-4567</div>
+                        <div>info@lelameid.com</div>
+                        <div>123 Education Ave<br>Learning City, LC 12345</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-300 mb-4">Stay updated with our latest news</p>
+                    <div class="flex">
+                        <input type="email" class="flex-1 px-4 py-2 rounded-l-lg border-none bg-gray-800 text-white" placeholder="Your email">
+                        <button class="bg-primary px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors whitespace-nowrap">
+                            <i class="ri-send-plane-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Lelameid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="counter-animation">
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.counter');
+            
+            const animateCounter = (counter) => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 20);
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="form-interactions">
+        document.addEventListener('DOMContentLoaded', function() {
+            const forms = document.querySelectorAll('form');
+            
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    
+                    submitBtn.textContent = 'Processing...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        submitBtn.textContent = 'Success!';
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.disabled = false;
+                            this.reset();
+                        }, 2000);
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = '6WKZg5kFOcWh2rnlRtwSyQ';
+    window.host = 'readdy.ai';
+</script>
+
+</html>
